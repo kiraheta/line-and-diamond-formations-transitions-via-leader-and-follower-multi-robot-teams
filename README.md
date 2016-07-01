@@ -24,7 +24,7 @@
     "./final 7000"
 6. You'll then see the "Enter 3 waypoints?" prompt on screen
 7. Enter 3 waypoints (-11,0), (0,0) and (10,0) 
-8. Program will now run sucessfully     
+8. Program will now run successfully     
 
 
 
