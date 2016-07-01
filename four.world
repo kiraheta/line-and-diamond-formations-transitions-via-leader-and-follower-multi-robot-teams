@@ -1,0 +1,144 @@
+# zzz.world - basic world file example
+# $Id$
+
+include "pioneer.inc"
+include "map.inc"
+include "sick.inc"
+
+# time to pause (in GUI mode) or quit (in headless mode (-g)) the simulation
+quit_time 3600 # 1 hour of simulated time
+
+paused 1
+
+# spatial resolution of the underlying occupancy grid. Default is 0.02m.
+resolution 0.02
+
+# set the multiple of real time that Stage should try to achieve. Default is 1. 
+# set to 0 to go as fast as possible.
+speedup 1 
+
+# configure the GUI window
+window
+(
+  #size [ 1935.000 966.000 ] # in pixels
+  size [ 1000.000 642.000 ] # in pixels
+  scale 25.00   # pixels per meter
+  #scale 0.33   # pixels per meter
+  center [ 0.00  -0.274 ]
+  rotate [ 0  0 ]
+  			
+  show_data 1              # 1=on 0=off
+)
+
+# load an environment bitmap
+floorplan
+( 
+  name "table"
+  #size [16.000 16.000 0.800]
+  size [40.000 18.00 0.600]
+  pose [0 0 0 0]
+  bitmap "bitmaps/table.png"
+  map_resolution 0.02
+)
+
+pioneer2dx
+(		  
+  # can refer to the robot by this name
+  # color "honeydew" or "coral"
+   color "red"
+  name "r0"
+  
+     pose [ -18.05 0.000 0 0.09 ] 
+   
+  # pioneer2dx's sonars	will be ranger:0 and the laser will be ranger:1
+  sicklaser( pose [ 0 0 0 0 ] ) 
+ 
+  # demonstrate a plugin controller, implemented in examples/ctrl/wander.cc
+  # you probably should comment this out when using simple.cfg with Player
+#  ctrl "wander"
+
+  # report error-free position in world coordinates
+  localization "gps"
+  localization_origin [ 0 0 0 0 ]
+)
+
+pioneer2dx
+(		  
+  # can refer to the robot by this name
+  color "blue"
+  name "r1"
+  
+     pose [ -18.05 1.000 0 0.09 ] 
+   
+  # pioneer2dx's sonars	will be ranger:0 and the laser will be ranger:1
+  sicklaser( pose [ 0 0 0 0 ] ) 
+ 
+  # demonstrate a plugin controller, implemented in examples/ctrl/wander.cc
+  # you probably should comment this out when using simple.cfg with Player
+#  ctrl "wander"
+
+  # report error-free position in world coordinates
+  localization "gps"
+  localization_origin [ 0 0 0 0 ]
+)
+
+pioneer2dx
+(		  
+  # can refer to the robot by this name
+  color "green"
+  name "r2"
+  
+     pose [ -18.05 -1.000 0 0.09 ] 
+   
+  # pioneer2dx's sonars	will be ranger:0 and the laser will be ranger:1
+  sicklaser( pose [ 0 0 0 0 ] ) 
+ 
+  # demonstrate a plugin controller, implemented in examples/ctrl/wander.cc
+  # you probably should comment this out when using simple.cfg with Player
+  #  ctrl "wander"
+
+  # report error-free position in world coordinates
+  localization "gps"
+  localization_origin [ 0 0 0 0 ]
+)
+
+pioneer2dx
+(		  
+  # can refer to the robot by this name
+  color "cyan"
+  name "r3"
+  
+     pose [ -18.05 -2.000 0 0.09 ] 
+   
+  # pioneer2dx's sonars	will be ranger:0 and the laser will be ranger:1
+  sicklaser( pose [ 0 0 0 0 ] ) 
+ 
+  # demonstrate a plugin controller, implemented in examples/ctrl/wander.cc
+  # you probably should comment this out when using simple.cfg with Player
+  #  ctrl "wander"
+
+  # report error-free position in world coordinates
+  localization "gps"
+  localization_origin [ 0 0 0 0 ]
+)
+
+pioneer2dx
+(		  
+  # can refer to the robot by this name
+  color "black"
+  name "r4"
+  
+     pose [ 25.00 25.000 0 0.09 ] 
+   
+  # pioneer2dx's sonars	will be ranger:0 and the laser will be ranger:1
+  sicklaser( pose [ 0 0 0 0 ] ) 
+ 
+  # demonstrate a plugin controller, implemented in examples/ctrl/wander.cc
+  # you probably should comment this out when using simple.cfg with Player
+  #  ctrl "wander"
+
+  # report error-free position in world coordinates
+  localization "gps"
+  localization_origin [ 0 0 0 0 ]
+)
+
