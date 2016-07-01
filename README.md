@@ -13,7 +13,7 @@
 
 2. g++ -o final `pkg-config --cflags playerc++` final.cc `pkg-config --libs playerc++` -lnsl communicate.o
 
-How to run the project:
+##How to run the project:
 
 1. Place all files inside of "worlds" directory player stage directory
 2. Open a terminal for stage, for Task Manager and a terminal for each robot
