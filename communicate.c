@@ -1,8 +1,3 @@
-/*
- * communicate.c
- * Fang (Daisy) Tang @ 2009
- */
-
 #include "communicate.h"
 
 struct sockaddr_in listen_addr[2];
