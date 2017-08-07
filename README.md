@@ -1,10 +1,13 @@
 # Line and Diamond Formations Transitions via Leader and Follower Multi-Robot Teams
 
+# Overview
+A Player/Stage application that simulates an environment in which a Multi-Robot navigates transitioning from a line to diamond formation and vice versa when reaching target waypoints.
+
 ## Description
 
-   The purpose of this project is to explore the use of simple task allocation 
-   and formation control. Specifically, to implement a Task Manager, establish 
-   communication between the Task Manager & leader robot, among the leader 
+   The purpose of this project is to explore the use of simple task allocation
+   and formation control. Specifically, to implement a Task Manager, establish
+   communication between the Task Manager & leader robot, among the leader
    robot & follower robots, and apply line & diamond formations.
 
 ## How to compile "communicate.h," "communicate.c" and "final.cc"
@@ -23,10 +26,8 @@
 5. For the Task Manager terminal i.e. the second terminal, run
     "./final 7000"
 6. You'll then see the "Enter 3 waypoints?" prompt on screen
-7. Enter 3 waypoints (-11,0), (0,0) and (10,0) 
+7. Enter 3 waypoints (-11,0), (0,0) and (10,0)
 8. Program will now run successfully     
 
 ## Demo
 https://youtu.be/4wiW0iyIh3I?t=16s
-
-
