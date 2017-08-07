@@ -1,7 +1,7 @@
 # Line and Diamond Formations Transitions via Leader and Follower Multi-Robot Teams
 
 # Overview
-A Player/Stage application that simulates an environment in which a Multi-Robot navigates transitioning from a line to diamond formation and vice versa when reaching target waypoints.
+A Player/Stage application that simulates an environment in which a Multi-Robot team navigates transitioning from a line to diamond formation and vice versa when reaching target waypoints.
 
 ## Description
 
